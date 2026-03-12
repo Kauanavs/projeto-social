@@ -8,8 +8,8 @@
 
 html,body{
     height: 100vh;
-    width: 100vh;
-    background-color: black;
+    width: 100vw;
+
 }
 
 body{
@@ -34,6 +34,16 @@ section#telefone{
     background-color: blue;
     background: url(../imagens/Adobe\ Express\ -\ file.png) no-repeat;
 
-
 }
+
+iframe#tela{
+    position: absolute;
+    top: 93px;
+    left:516px;
+    width: 270px;
+    height: 583px;
+    border-radius: 30px;
+}
+
+
 

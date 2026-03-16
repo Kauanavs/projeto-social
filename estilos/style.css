@@ -32,9 +32,13 @@ section#telefone{
 
     height: 816px;
     width: 1310px;
-    background-color: blue;
+
     background: url(../imagens/Untitled\ design.png) no-repeat;
 
+
+    filter: drop-shadow(0px 20px 30px rgba(0,0,0,0.6));
+
+    animation: aparecer 0.8s ease;
 }
 
 iframe#tela{
@@ -58,13 +62,30 @@ section#rede-sociais img{
     margin: 10px;
     border-radius: 50%;
     box-sizing: border-box;
+    cursor: pointer;
 
-    transition: transform .3s, box-shadow .3s;
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
 section#rede-sociais img:hover{
-    transform: scale(1.15);
-    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transform: translateY(-5px) scale(1.15);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+}
+
+section#rede-sociais img:active{
+    transform: scale(0.95);
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 
 
